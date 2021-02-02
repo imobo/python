@@ -31,10 +31,9 @@ def cdf(x):
     dum = primex * (q * (0.31938153 + q * (-0.356563782 + q * dum)))
     if x < 0:
         cdfResult = dum
-        return cdfResult
     else:
         cdfResult = 1 - dum
-        return cdfResult
+    return cdfResult
 
 
 evc = euroVanillaCall(50, 100, 1, 0.05, 0.25)
