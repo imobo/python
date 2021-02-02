@@ -13,11 +13,6 @@ def euroVanillaCall(S, K, T, r, sigma):
 
 
 def euroVanillaPut(S, K, T, r, sigma):
-    # S: spot price
-    # K: strike price
-    # T: time to maturity
-    # r: interest rate
-    # sigma: volatility of underlying asset    
     d1 = (math.log(S / K) + (r + 0.5 * sigma ** 2) * T) / (sigma * math.sqrt(T))
     d2 = (math.log(S / K) + (r - 0.5 * sigma ** 2) * T) / (sigma * math.sqrt(T))
     put = (K * math.exp(-r * T) * normCdf(-d2) - S * normCdf(-d1))
