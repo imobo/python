@@ -3,14 +3,6 @@ from matplotlib import gridspec
 import os
 import copy
 import datetime
-#TODO 不同审查员时的区分
-# TODO 支持副主任、主任
-# 分数的分割线、系数的LIST
-# 读取数据时的起始行和列
-
-# TODO 加入部门
-
-# TODO 表格中增加COMMENT
 
 
 def readExcel(file):
