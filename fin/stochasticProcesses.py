@@ -16,8 +16,8 @@ def winener(N, a=None, b=None):
             # Winener: dx = dz = ND(0,1) * sqrt(dt)
             dx[i] = r * math.sqrt(dt)
         else:
-            # General Winener: dx = a dt * b dz
-            dx[i] = (a * dt) * (b * r * math.sqrt(dt))
+            # General Winener: dx = a dt + b dz
+            dx[i] = (a * dt) + (b * r * math.sqrt(dt))
         X[i] = X[i-1] + dx[i]
     return X
 
