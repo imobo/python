@@ -5,8 +5,8 @@ from urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 
 useProxies = 1
-wanbianAppid = 3111
-wanbianAppkey = "ff9d7070dde9c01e716ee516a07b1378"
+wanbianAppid = 1234
+wanbianAppkey = ""
 fixedProxies = ""
 
 class getProxy:
